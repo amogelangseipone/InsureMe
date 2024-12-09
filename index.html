@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Premium Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Insurance Premium Calculator</h1>
+        <p>Calculate your insurance premium based on age, gender, and accident history.</p>
+    </header>
+
+    <main>
+        <section class="calculator-form">
+            <form>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required placeholder="Enter your age">
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="accidents">Accident History</label>
+                    <input type="number" id="accidents" name="accidents" required placeholder="Enter number of accidents">
+                </div>
+
+                <button type="submit">Calculate Premium</button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Your Results</h2>
+            <p id="risk-score">Risk Score: </p>
+            <p id="premium">Premium: </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Car Insurance Co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
